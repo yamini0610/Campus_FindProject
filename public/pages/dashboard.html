@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CampusFind campus lost and found demo">
+    <title>Student Dashboard | CampusFind</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+    <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span
+                    class="brand-accent">Find</span></span></a><button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation">☰</button>
+        <nav id="mainNav"><a href="index.html" class="">Home</a><a href="search-items.html" class="">Search</a><a
+                href="report-lost.html" class="">Report Lost</a><a href="report-found.html" class="">Report Found</a><a
+                href="dashboard.html" class="active">Dashboard</a><a href="feedback.html" class="">Feedback</a></nav>
+                <button id="logoutBtn" class="primary-btn" type="button">
+    Logout
+</button>
+    </header>
+    <main class="container">
+        <section class="page-intro dash-intro">
+            <div>
+                <p class="eyebrow">YOUR CAMPUS SPACE</p>
+                <h1 id="welcomeTitle">Welcome to CampusFind.</h1>
+                <p class="lead">Keep track of your reports and possible matches.</p>
+            </div><span class="demo-pill">MYSQL CONNECTED</span>
+        </section>
+        <section class="stats">
+            <div><span>My reports</span><b id="statReports">0</b></div>
+            <div><span>Found items</span><b id="statFound">0</b></div>
+            <div><span>Open claims</span><b id="statClaims">0</b></div>
+        </section>
+        <section class="dashboard-grid"><a class="dash-card" href="report-lost.html"><span class="feature-icon">＋</span>
+                <h3>Report Lost</h3>
+                <p>Tell the campus community what you misplaced.</p><b>Start report →</b>
+            </a><a class="dash-card" href="report-found.html"><span class="feature-icon">✦</span>
+                <h3>Report Found</h3>
+                <p>Record an item you found and help return it.</p><b>Start report →</b>
+            </a><a class="dash-card" href="search-items.html"><span class="feature-icon">⌕</span>
+                <h3>Search Items</h3>
+                <p>Look through current lost and found listings.</p><b>Search now →</b>
+            </a><a class="dash-card" href="my-reports.html"><span class="feature-icon">▤</span>
+                <h3>My Reports</h3>
+                <p>Review the items you have reported.</p><b>View reports →</b>
+            </a><a class="dash-card" href="claim-requests.html"><span class="feature-icon">✓</span>
+                <h3>Claim Requests</h3>
+                <p>Check claims connected to found items.</p><b>View claims →</b>
+            </a><a class="dash-card" href="notifications.html"><span class="feature-icon">♧</span>
+                <h3>Notifications</h3>
+                <p>View possible matches, claim decisions and collection updates.</p><b>View updates →</b>
+            </a><a class="dash-card" href="history.html"><span class="feature-icon">◷</span>
+                <h3>Activity History</h3>
+                <p>See your recent CampusFind activity.</p><b>View history →</b>
+            </a></section>
+        <p class="center"><a class="text-link" href="item-details.html">Browse all item details →</a>　<a
+                class="text-link" href="feedback.html">Share feedback →</a></p>
+    </main>
+    <footer class="site-footer">
+        <div><a class="brand footer-brand" href="index.html"><span class="brand-mark">C</span><span>Campus<span
+                        class="brand-accent">Find</span></span></a>
+            <p>Helping campus belongings find their way back.</p>
+        </div>
+        <div class="footer-links"><a href="about.html">About</a><a href="safety-guidelines.html">Safety</a><a
+                href="faq.html">FAQs</a><a href="contact.html">Contact</a><a href="feedback.html">Feedback</a></div>
+        <small>© 2026 CampusFind · Academic demo project</small>
+    </footer>
+    <script src="../assets/app.js"></script>
+</body>
+
+</html>
