@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express'), mysql = require('mysql2/promise'), bcrypt = require('bcryptjs'), session = require('express-session'), MySQLStore = require('express-mysql-session')(session), path = require('path'), crypto = require('crypto'), nodemailer = require('nodemailer');
-const app = express(); app.use(express.json({ limit: '3mb' })); app.use(express.urlencoded({ extended: true }));
+const app = express(); app.set('trust proxy', 1); app.use(express.json({ limit: '3mb' })); app.use(express.urlencoded({ extended: true }));
 const dbOpts = { host: process.env.DB_HOST || 'localhost', port: +(process.env.DB_PORT || 3306), user: process.env.DB_USER || 'root', password: process.env.DB_PASSWORD || '', database: process.env.DB_NAME || 'campusfind' };
 const pool = mysql.createPool({ ...dbOpts, waitForConnections: true, connectionLimit: 10 });
 const store = new MySQLStore({ ...dbOpts, clearExpired: true, checkExpirationInterval: 900000, expiration: 86400000 });
